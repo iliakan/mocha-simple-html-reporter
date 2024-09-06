@@ -7,7 +7,7 @@
 }
 
 #mocha .test pre.error {
-    display: block;
+    display: none;
 }
 
 #mocha .test .html-error pre.error {
@@ -28,6 +28,10 @@
     cursor: auto;
 }
 
+#mocha .mocha-stats {
+  display: none;
+}
+
 #mocha .mocha-header {
     right: 30px;
     position: fixed;
@@ -45,6 +49,11 @@
 
 #mocha .mocha-header ul {
     display: inline-block;
+}
+
+
+#mocha .mocha-header .mocha-stats {
+  display: none;
 }
 
 #mocha .mocha-stats li {
@@ -77,8 +86,4 @@
 
 #mocha .mocha-menu li span.checked {
     box-shadow: inset 1px 1px 3px rgba(0,0,0,.2);
-}
-
-#mocha .toggle-passes {
-    background: #b94a48;
 }
